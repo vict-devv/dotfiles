@@ -10,6 +10,7 @@
 [alias]
 	lg = log --graph --pretty=format:'%C(auto)%h-%C(auto)%d %s %C(cyan)%an %C(green)%cr' --abbrev-commit --date=relative
 	co = checkout
+	cm = commit
 	br = branch
 	p = pull
 	rb = rebase
