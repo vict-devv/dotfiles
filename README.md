@@ -6,12 +6,12 @@ Dotfiles for Linux and other tools configuration.
 
 The following table shows the current Theme configurations:
 
-| Topic       | Value                                                               |
-| ----------- | ------------------------------------------------------------------- |
-| Colorscheme | [Nord](https://www.nordtheme.com/)                                  |
-| Font Family | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) |
-| Font Weight | Semi-bold / Bold                                                    |
-| Font Size   | 10 / 12                                                             |
+| Topic       | Value                                                       |
+| ----------- | ----------------------------------------------------------- |
+| Colorscheme | [Nord](https://www.nordtheme.com/)                          |
+| Font Family | [Cascadia Code](https://github.com/microsoft/cascadia-code) |
+| Font Weight | Semi-bold / Bold                                            |
+| Font Size   | 10 / 12                                                     |
 
 ### Wallpapers
 
