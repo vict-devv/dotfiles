@@ -2,7 +2,7 @@
 	name = Victor F.
 	email = victor.id1993@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 [init]
 	defaultBranch = main
 [pull]
