@@ -61,7 +61,7 @@ show_always = true
 format = "[ $user ]($style)"
 
 [directory]
-format = "[$path]($style)"
+format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
