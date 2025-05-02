@@ -61,7 +61,7 @@ show_always = true
 format = "[ $user ]($style)"
 
 [directory]
-format = "[ $path ]($style)"
+format = "[$path]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -73,32 +73,22 @@ truncation_symbol = "…/"
 "src" = " "
 
 [git_branch]
-symbol = ""
-format = '[[ $symbol $branch ](fg:git_fg bg:git_bg)]($style)'
-
-[git_status]
-format = '[[($all_status$ahead_behind )](fg:git_fg bg:git_bg)]($style)'
+symbol = " "
 
 [nodejs]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
+symbol = " "
 
 [c]
 symbol = " "
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
 
 [rust]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
+symbol = " "
 
 [golang]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
+symbol = " "
 
 [python]
-symbol = ""
-style = "bg:lang_bg"
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
+symbol = " "
 
 [character]
 disabled = false
