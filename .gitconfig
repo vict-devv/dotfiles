@@ -1,8 +1,9 @@
 [user]
 	name = Victor F.
-	email = victor.id1993@gmail.com
+	email = victor.*****@gmail.com
+	signingkey = /home/victor/.ssh/id_ed25519.pub
 [core]
-	editor = nvim
+	editor = vim
 [init]
 	defaultBranch = main
 [pull]
@@ -15,3 +16,5 @@
 	p = pull
 	rb = rebase
 	st = status
+[gpg]
+	format = ssh
