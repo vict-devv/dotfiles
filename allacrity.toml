@@ -1,0 +1,28 @@
+[general]
+import = ["./carbonfox.toml"]
+
+[window]
+padding.x = 10
+padding.y = 5
+opacity = 0.8
+blur = true
+startup_mode = "Maximized"
+
+[font]
+size = 14
+[font.normal]
+family = "CaskaydiaMono Nerd Font"
+style = "Semibold"
+[font.bold]
+family = "CaskaydiaMono Nerd Font"
+style = "Bold"
+
+[selection]
+save_to_clipboard = true
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+[terminal]
+shell = "/usr/bin/zsh"
