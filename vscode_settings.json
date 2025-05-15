@@ -27,6 +27,7 @@
   "vim.ignorecase": true,
   "vim.hlsearch": true,
   "vim.smartcase": true,
+  "vim.surround": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
