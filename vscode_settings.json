@@ -151,6 +151,10 @@
       "before": ["K"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
     },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
     // comments
     {
       "before": ["g", "c", "c"],
