@@ -1,0 +1,72 @@
+// Place your key bindings in this file to override the defaults
+[
+  // terminal
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.output.action.clearOutput"
+  },
+  // primary side bar - explorer
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // git
+  {
+    "key": "ctrl+shift+a",
+    "command": "git.stageAll",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "git.unstageAll",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "git.cleanAll",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  // zen mode
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  }
+]
