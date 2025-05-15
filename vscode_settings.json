@@ -10,7 +10,7 @@
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.enablePersistentSessions": false,
   "explorer.confirmDelete": false,
-  "workbench.iconTheme": "icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "Carbonfox",
   "workbench.startupEditor": "none",
   "github.copilot.enable": {
