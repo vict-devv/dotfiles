@@ -191,6 +191,10 @@
       "commands": ["workbench.view.explorer"]
     },
     {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
       "before": ["<leader>", "F"],
       "commands": ["workbench.action.findInFiles"]
     },
