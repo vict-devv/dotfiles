@@ -3,6 +3,10 @@
   // terminal
   {
     "key": "ctrl+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+t",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -17,6 +21,11 @@
   {
     "key": "ctrl+shift+c",
     "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   },
   {
