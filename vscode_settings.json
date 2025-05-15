@@ -94,6 +94,10 @@
     },
     {
       "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "P"],
       "commands": ["workbench.action.showCommands"]
     },
     {
