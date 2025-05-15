@@ -1,0 +1,256 @@
+{
+  "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+  "editor.fontWeight": "bold",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "'CaskaydiaMono NF'",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.enablePersistentSessions": false,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "icons",
+  "workbench.colorTheme": "Carbonfox",
+  "workbench.startupEditor": "none",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.minimap.enabled": false,
+  // Vim Settings
+  "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
+  "vim.autoindent": true,
+  "vim.ignorecase": true,
+  "vim.hlsearch": true,
+  "vim.smartcase": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    // comments
+    {
+      "before": ["g", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["g", "b", "c"],
+      "commands": ["editor.action.blockComment"]
+    },
+    // indentation
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    // move lines
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    // move around panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // misc
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "commands": [":e!"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    // git open preview
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.dirtydiff.next"]
+    },
+    // lsp stuff
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.goToDefinition"]
+    },
+    {
+      "before": ["g", "T"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    // comments
+    {
+      "before": ["g", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["g", "b", "c"],
+      "commands": ["editor.action.blockComment"]
+    },
+    // splits
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": [":split"]
+    },
+    // tabs nav
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":bpreviou"]
+    },
+    {
+      "before": ["<S-c>"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<S-x>"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    // side bars shortcuts
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "F"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "F"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    // run and debug
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["code-runner.run"]
+    },
+    {
+      "before": ["<leader>", "c", "t"],
+      "commands": ["code-runner.stop"]
+    },
+    {
+      "before": ["<leader>", "d", "r"],
+      "commands": ["workbench.action.debug.run"]
+    },
+    {
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "d", "S"],
+      "commands": ["workbench.action.debug.restart"]
+    },
+    {
+      "before": ["<leader>", "d", "t"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "d", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "d", "n"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "before": ["<leader>", "d", "N"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    }
+  ],
+  // Formatters
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
