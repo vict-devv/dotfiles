@@ -142,6 +142,10 @@
       "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
     // comments
     {
       "before": ["g", "c", "c"],
@@ -193,10 +197,6 @@
     {
       "before": ["<leader>", "g"],
       "commands": ["workbench.view.scm"]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     // run and debug
     {
