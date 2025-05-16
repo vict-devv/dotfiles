@@ -173,6 +173,10 @@
       "before": ["<leader>", "s", "h"],
       "commands": [":split"]
     },
+    {
+      "before": ["<leader>", "s", "m"],
+      "commands": ["workbench.action.toggleMaximizeEditorGroup"]
+    },
     // tabs nav
     {
       "before": ["<S-l>"],
