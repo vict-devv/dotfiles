@@ -25,6 +25,7 @@ set showcmd                                                                     
 set encoding=utf-8
 set showmatch
 set clipboard=unnamedplus
+set hidden
 set timeoutlen=800
 set isfname+="@-@"
 set iskeyword+="@_@"
