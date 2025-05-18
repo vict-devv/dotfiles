@@ -184,7 +184,7 @@
     },
     {
       "before": ["<S-h>"],
-      "commands": [":bpreviou"]
+      "commands": [":bprevious"]
     },
     {
       "before": ["<S-c>"],
