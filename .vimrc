@@ -4,6 +4,7 @@ nnoremap <leader>e :Explore<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>u :e!<cr>
+nnoremap <C-n> :nohl<cr>
 
 syntax on
 set nocompatible
