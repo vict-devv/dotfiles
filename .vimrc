@@ -7,25 +7,32 @@ nnoremap <leader>u :e!<cr>
 
 syntax on
 set nocompatible
-set number
-set relativenumber
-set ruler
+set showcmd
+set wildmenu
 set encoding=utf-8
+set showmatch
+set clipboard=unnamedplus
+set timeoutlen=800
+set isfname+="@-@"
+set iskeyword+="@_@"
+
+set number
+"set relativenumber
+
+set ruler
 set nowrap
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set noshiftround
+
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 set smartindent
-set showmatch
-set clipboard=unnamedplus
-set timeoutlen=800
-set isfname+="@-@"
 
 let g:netrw_banner=0
 let g:netrw_localcopydircmd="cp -r"
