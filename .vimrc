@@ -7,6 +7,8 @@ nnoremap <leader>u :e!<cr>
 nnoremap <C-n> :nohl<cr>
 nnoremap <leader>j :wincmd j<cr>
 nnoremap <leader>k :wincmd k<cr>
+nnoremap <leader>h :wincmd h<cr>
+nnoremap <leader>l :wincmd l<cr>
 
 syntax on
 set nocompatible
