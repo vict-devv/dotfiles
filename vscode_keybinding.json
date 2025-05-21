@@ -25,7 +25,7 @@
   },
   {
     "key": "ctrl+g",
-    "command": "workbench.action.focusActiveEditorGroup",
+    "command": "workbench.action.focusActiveEditorGroup"
   },
   {
     "key": "ctrl+shift+l",
@@ -70,6 +70,26 @@
   {
     "key": "ctrl+shift+d",
     "command": "git.cleanAll",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "git.commit",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "git.push",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "git.pushToForce",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "git.publish",
     "when": "activeViewlet == 'workbench.view.scm'"
   },
   // zen mode
