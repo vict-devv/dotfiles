@@ -58,7 +58,7 @@
   },
   // git
   {
-    "key": "ctrl+shift+a",
+    "key": "ctrl+shift+s",
     "command": "git.stageAll",
     "when": "activeViewlet == 'workbench.view.scm'"
   },
@@ -68,13 +68,18 @@
     "when": "activeViewlet == 'workbench.view.scm'"
   },
   {
-    "key": "ctrl+shift+d",
+    "key": "ctrl+shift+x",
     "command": "git.cleanAll",
     "when": "activeViewlet == 'workbench.view.scm'"
   },
   {
-    "key": "ctrl+shift+m",
+    "key": "ctrl+shift+c",
     "command": "git.commit",
+    "when": "activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "git.commitAmend",
     "when": "activeViewlet == 'workbench.view.scm'"
   },
   {
