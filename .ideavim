@@ -1,0 +1,81 @@
+let mapleader=" "
+
+" Common Settings ----------
+set number
+set nowrap
+
+set history=10
+set clipboard=ideaput
+set iskeyword+="@_@"
+set timeoutlen=800
+
+set hlsearch
+set incsearch
+set smartcase
+
+set showcmd
+set showmode
+
+set noerrorbells
+set visualbell
+
+" Plugins ----------
+set highlightedyank
+set sneak
+set surround
+set mini-ai
+set matchit
+
+" Mappings ----------
+" General...
+imap jk <esc>
+nmap <leader>nh :nohlsearch<cr>
+nmap <leader>w :w<cr>
+map <leader>/ <Action>(CommentByLineComment)
+map <leader>sw <Action>(SurroundWith)
+map K <Action>(ShowHoverInfo)
+map <leader>ca <Action>(ShowIntentionActions)
+
+" Navigation panels
+nmap <leader>h <C-w>h
+nmap <leader>l <C-w>l
+nmap <leader>k <C-w>k
+nmap <leader>j <C-w>j
+
+" Split - s
+nmap <leader>sh <Action>(SplitHorizontally)
+nmap <leader>sv <Action>(SplitVertically)
+nmap <leader>sm <Action>(MaximizeEditorInSplit)
+nmap <leader>sg <Action>(MoveEditorToOppositeTabGroup)
+
+" Editor tabs - <S- >
+map <S-c> <Action>(CloseEditor)
+map <S-x> <Action>(CloseAllEditorsButActive)
+map <S-q> <Action>(CloseAllEditors)
+map <S-l> <Action>(NextTab)
+map <S-h> <Action>(PreviousTab)
+
+" Refactor
+map <leader>f <Action>(ReformatCode)
+map <leader>fo <Action>(OptimizeImports)
+map <leader>fr <Action>(RenameElement)
+map <leader>fe <Action>(RenameFile)
+map <leader>fc <Action>(ChangeSignature)
+map <leader>fm <Action>(Move)
+
+" Search...
+map <leader>sf <Action>(FindInPath)
+map <leader>sc <Action>(GotoClass)
+
+" Refactoring
+map <leader>rf <Action>(RefactoringMenu)
+
+" Go To...
+map gF <Action>(FindUsages)
+map gf <Action>(ShowUsages)
+map gD <Action>(GoToTypeDeclaration)
+map gi <Action>(GoToImplementation)
+map gs <Action>(GoToSuperMethod)
+map gt <Action>(GoToTest)
+map [[ <Action>(MethodUp)
+map ]] <Action>(MethodDown)
