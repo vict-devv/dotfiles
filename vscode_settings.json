@@ -205,36 +205,7 @@
       "before": ["<S-x>"],
       "commands": ["workbench.action.closeOtherEditors"]
     },
-    // side bars shortcuts
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
-    },
-    {
-      "before": ["<leader>", "F"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "F"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "g"],
-      "commands": ["workbench.view.scm"]
-    },
     // run and debug
-    {
-      "before": ["<leader>", "c", "r"],
-      "commands": ["code-runner.run"]
-    },
-    {
-      "before": ["<leader>", "c", "t"],
-      "commands": ["code-runner.stop"]
-    },
     {
       "before": ["<leader>", "d", "r"],
       "commands": ["workbench.action.debug.run"]
@@ -266,6 +237,11 @@
     {
       "before": ["<leader>", "d", "b"],
       "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    // todo
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.view.extension.todo-tree-container"]
     }
   ],
   // Formatters
