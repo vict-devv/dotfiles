@@ -1,17 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
+  // editor
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
   // terminal
   {
     "key": "ctrl+t",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
-    "key": "ctrl+shift+t",
     "command": "workbench.action.togglePanel"
   },
   {
     "key": "ctrl+m",
-    "command": "workbench.action.toggleMaximizedPanel"
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+n",
@@ -24,14 +26,10 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+g",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
     "key": "ctrl+shift+l",
     "command": "workbench.output.action.clearOutput"
   },
-  // primary side bar - explorer
+  // explorer
   {
     "key": "ctrl+e",
     "command": "workbench.action.toggleSidebarVisibility"
