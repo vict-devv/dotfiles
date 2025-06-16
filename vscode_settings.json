@@ -1,36 +1,47 @@
 {
-  "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+  // editor
+  "editor.fontFamily": "CaskaydiaMono Nerd Font",
   "editor.fontWeight": "bold",
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "terminal.integrated.fontLigatures.enabled": true,
+  "editor.fontSize": 12,
   "editor.fontLigatures": true,
-  "terminal.integrated.fontFamily": "'CaskaydiaMono NF'",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "bold",
-  "terminal.integrated.enablePersistentSessions": false,
-  "explorer.confirmDelete": false,
-  "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": "Carbonfox",
-  "workbench.startupEditor": "none",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  // Vim Settings
+  // terminal
+  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.enablePersistentSessions": false,
+  // explorer
+  "explorer.confirmDelete": false,
+  //workbench
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Solarized Light N",
+  "workbench.startupEditor": "none",
+  // git
+  // "github.copilot.enable": {
+  //   "*": true,
+  //   "plaintext": true,
+  //   "markdown": true,
+  //   "scminput": true
+  // },
+  "git.confirmSync": false,
+  "git.allowForcePush": true,
+  // vim
   "vim.leader": "<space>",
-  "vim.smartRelativeLine": true,
+  "vim.highlightedyank.enable": true,
+  "vim.sneak": true,
   "vim.autoindent": true,
   "vim.ignorecase": true,
+  "vim.smartRelativeLine": true,
   "vim.hlsearch": true,
   "vim.smartcase": true,
   "vim.surround": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
+  "vim.timeout": 400,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -187,7 +198,7 @@
       "commands": [":bprevious"]
     },
     {
-      "before": ["<S-c>"],
+      "before": ["<S-q>"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
