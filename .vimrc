@@ -21,7 +21,8 @@ nnoremap <leader>sv :vsplit<cr>
 
 syntax on
 set nocompatible
-set showcmd                                                                                                                                                 set wildmenu
+set showcmd
+set wildmenu
 set encoding=utf-8
 set showmatch
 set clipboard=unnamedplus
