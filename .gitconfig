@@ -1,6 +1,6 @@
 [user]
 	name = Victor F.
-	email = victor.*****@gmail.com
+	email = [email here]
 	signingkey = /home/victor/.ssh/id_ed25519.pub
 [core]
 	editor = vim
