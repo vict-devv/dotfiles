@@ -54,47 +54,6 @@
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  // git
-  {
-    "key": "ctrl+shift+s",
-    "command": "git.stageAll",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+u",
-    "command": "git.unstageAll",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+x",
-    "command": "git.cleanAll",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+c",
-    "command": "git.commit",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+m",
-    "command": "git.commitAmend",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+p",
-    "command": "git.push",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+f",
-    "command": "git.pushToForce",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+b",
-    "command": "git.publish",
-    "when": "activeViewlet == 'workbench.view.scm"
-  },
   // zen mode
   {
     "key": "ctrl+z",
