@@ -8,7 +8,7 @@
   // terminal
   {
     "key": "ctrl+t",
-    "command": "workbench.action.togglePanel"
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
     "key": "ctrl+m",
@@ -21,7 +21,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+c",
+    "key": "ctrl+shift+q",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
@@ -29,11 +29,20 @@
     "key": "ctrl+shift+l",
     "command": "workbench.output.action.clearOutput"
   },
-  // explorer
+  // Sidebars
   {
     "key": "ctrl+e",
     "command": "workbench.action.toggleSidebarVisibility"
   },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.togglePanel"
+  },
+  // Explorer
   {
     "key": "n",
     "command": "explorer.newFile",
@@ -45,7 +54,7 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "shift+n",
+    "key": "N",
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   },
@@ -54,7 +63,7 @@
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  // zen mode
+  // Zen mode
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"

@@ -1,7 +1,7 @@
 [user]
 	name = Victor F.
 	email = [email here]
-	signingkey = /home/victor/.ssh/id_ed25519.pub
+	signingkey = [signingKey path or value here]
 [core]
 	editor = vim
 [init]
