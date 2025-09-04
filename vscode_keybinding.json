@@ -49,6 +49,11 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
+    "key": "m",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && !inputFocus"
