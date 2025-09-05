@@ -35,7 +35,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+b",
+    "key": "ctrl+shift+b",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
