@@ -17,7 +17,7 @@
   // explorer
   "explorer.confirmDelete": false,
   //workbench
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.startupEditor": "none",
   "github.copilot.enable": {
