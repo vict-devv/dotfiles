@@ -1,14 +1,14 @@
 {
   // editor
-  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontWeight": "bold",
-  "editor.fontSize": 13,
+  "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   // terminal
-  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.fontSize": 12,
@@ -17,8 +17,8 @@
   // explorer
   "explorer.confirmDelete": false,
   //workbench
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": "Default Dark Modern",
   "workbench.startupEditor": "none",
   "github.copilot.enable": {
     "*": true,
@@ -33,6 +33,7 @@
   "vim.leader": "<space>",
   "vim.highlightedyank.enable": true,
   "vim.sneak": true,
+  "vim.easymotion": true,
   "vim.autoindent": true,
   "vim.ignorecase": true,
   "vim.hlsearch": true,
@@ -459,5 +460,5 @@
         "editor.debug.action.toggleBreakpoint"
       ]
     },
-  ],
+  ]
 }
