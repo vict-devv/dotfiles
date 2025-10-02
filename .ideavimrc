@@ -1,0 +1,288 @@
+" .ideavim vict-devv
+
+" basic settings
+set scrolloff=10
+set linenumber
+set showmode
+set showcmd
+
+set smartcase
+set incsearch
+set hlsearch
+
+set visualbell
+set clipboard+=unnamed
+
+" plugins
+set surround
+set highlightedyank
+set sneak
+set nerdtree
+set easymotion
+set notimeout
+set which-key
+set commentary
+set multiple-cursors
+set argtextobj
+set mini-ai
+set dial
+
+" set handlers to vim
+sethandler <C-a> a:vim
+sethandler <C-b> a:vim
+sethandler <C-c> a:vim
+sethandler <C-d> a:vim
+sethandler <C-e> a:vim
+sethandler <C-f> a:vim
+sethandler <C-g> a:vim
+sethandler <C-h> a:vim
+sethandler <C-i> a:vim
+sethandler <C-j> a:ide
+sethandler <C-k> a:ide
+sethandler <C-l> a:vim
+sethandler <C-m> a:vim
+sethandler <C-n> a:vim
+sethandler <C-o> a:vim
+sethandler <C-p> a:vim
+sethandler <C-q> a:vim
+sethandler <C-r> a:vim
+sethandler <C-s> a:vim
+sethandler <C-t> a:vim
+sethandler <C-u> a:vim
+sethandler <C-v> a:vim
+sethandler <C-v> a:vim
+sethandler <C-w> a:vim
+sethandler <C-x> a:vim
+sethandler <C-y> a:vim
+sethandler <C-z> a:vim
+
+" toggle line number relative
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber number
+  endif
+endfunction
+
+nnoremap <leader><Tab> :call NumberToggle()<cr>
+let g:WhichKeyDesc_toggle_line_numbers = "<leader><Tab> Toggle line numbers"
+
+" which-key settings
+let g:WhichKey_FontSize = 16
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+let g:WhichKey_ShowTypedSequence = "true"
+
+let s:whichKeyEnabled = 0
+function! WhichKeyToggle()
+  if s:whichKeyEnabled
+    set which-key!
+    set notimeout!
+    let s:whichKeyEnabled = 0
+  else
+    set which-key
+    set notimeout
+    let s:whichKeyEnabled = 1
+  endif
+endfunction
+
+nnoremap <leader>8 :call WhichKeyToggle()<cr>
+let g:WhichKeyDesc_toggle_which_key = "<leader>8 Toggle which-key"
+
+" reload ideavim source
+:map <leader>9 :source ~/.ideavimrc<CR>
+let g:WhichKeyDesc_reload_vim_rc = "<leader>9 Reload ideavimrc"
+
+" map leader
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+let g:WhichKeyDesc_leader = "<leader> Leader key"
+
+" key mappings
+inoremap jk <Esc>
+:map <leader>w <Action>(SaveDocument)
+let g:WhichKeyDesc_save_document = "<leader>w Save document"
+nnoremap <leader><cr> :nohlsearch<cr>
+let g:WhichKeyDesc_select_all = "<leader>aa Select the whole file"
+:nmap <c-o> <Action>(Back)
+:nmap <c-i> <Action>(Forward)
+
+vnoremap p "_dP`]
+nnoremap p p`]
+
+nnoremap ,y "+y
+vnoremap ,y "+y
+nnoremap ,yy "+yy
+nnoremap ,p "+p
+
+nnoremap x "_x
+nmap X "_d
+nmap XX "_dd
+vmap X "_d
+vmap x "_d
+
+nnoremap c "xc
+xnoremap c "xc
+
+" centralize screen
+nnoremap n nzz
+nnoremap N Nzz
+vnoremap n nzz
+vnoremap N Nzz
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+vnoremap <C-u> <C-u>zz
+vnoremap <C-d> <C-d>zz
+
+"misc
+:map <leader>aa ggVG
+:map <leader>ac <action>(ShowIntentionActions)
+:map <leader>as <action>(SearchEverywhere)
+let g:WhichKeyDesc_misc = "<leader>a Misc"
+let g:WhichKeyDesc_select_all= "<leader>aa Select all file content"
+let g:WhichKeyDesc_code_action = "<leader>am Show code action"
+let g:WhichKeyDesc_search_everywhere = "<leader>am Search everywhere"
+
+" window navigation
+:map <a-k> gT
+:map <a-j> gt
+:map <Tab> <Action>(NextTab)
+:map <S-Tab> <Action>(PreviousTab)
+
+" closing tabs
+:map <leader>qq <Action>(CloseEditor)
+:map <leader>qa <Action>(CloseAllEditors)
+:map <leader>qx <Action>(CloseAllEditorsButActive)
+let g:WhichKeyDesc_close = "<leader>q Close editors groups"
+let g:WhichKeyDesc_close_editor = "<leader>qq Close active editor"
+let g:WhichKeyDesc_close_all_editors = "<leader>qa Close all editors"
+let g:WhichKeyDesc_close_all_other_editors = "<leader>qx Close all other editors"
+
+" pane navigation
+nnoremap <S-h> <C-w>h
+nnoremap <S-l> <C-w>l
+nnoremap <S-k> <C-w>k
+nnoremap <S-j> <C-w>j
+
+" commenting
+map <leader>/ <action>(CommentByLineComment)
+let g:WhichKeyDesc_comment_line = "<leader>/ Comment line"
+
+" window splits
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
+map <leader>su <Action>(Unsplit)
+map <leader>sm <Action>(MoveEditorToOppositeTabGroup)
+let g:WhichKeyDesc_split = "<leader>w Split windows"
+let g:WhichKeyDesc_split_vertically = "<leader>sv Split vertically"
+let g:WhichKeyDesc_split_horizontally = "<leader>sh Split horizontally"
+let g:WhichKeyDesc_unsplit = "<leader>su Unsplit"
+let g:WhichKeyDesc_split_move_tab_group = "<leader>sm Move Editor to Opposite Tab Group"
+
+" file navigation
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fc <action>(FindInPath)
+map <leader>fl <action>(RecentLocations)
+let g:WhichKeyDesc_file_nav = "<leader>f File navigation"
+let g:WhichKeyDesc_file_nav_goto_file = "<leader>ff Go to file"
+let g:WhichKeyDesc_file_nav_show_recent_files = "<leader>fr Show recent files"
+let g:WhichKeyDesc_file_nav_goto_content = "<leader>fc Search for file content"
+let g:WhichKeyDesc_file_nav_show_recent_locations = "<leader>fl Show recent locations"
+
+" refactoring
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
+let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
+let g:WhichKeyDesc_refactoring_method = "<leader>rm Extract method"
+let g:WhichKeyDesc_refactoring_variable = "<leader>rv Introduce variable"
+let g:WhichKeyDesc_refactoring_field = "<leader>rf Introduce field"
+let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
+let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
+
+" Go to code
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gf <Action>(Back)
+nmap <leader>gb <Action>(Forward)
+let g:WhichKeyDesc_goto = "<leader>g Go to X"
+let g:WhichKeyDesc_goto_declaration = "<leader>gd Go to Definition"
+let g:WhichKeyDesc_goto_type_declaration = "<leader>gy Go to Type Definition"
+let g:WhichKeyDesc_goto_implementation = "<leader>gi Go to Implementation"
+let g:WhichKeyDesc_goto_usages = "<leader>gu Go to Usages"
+let g:WhichKeyDesc_goto_test = "<leader>gt Go to Test"
+let g:WhichKeyDesc_goto_back = "<leader>gb Go Back"
+let g:WhichKeyDesc_goto_forward = "<leader>gf Go Forward"
+:map [[ <Action>(MethodUp)
+:map ]] <Action>(MethodDown)
+let g:WhichKeyDesc_method_up = "[[ Move to next method"
+let g:WhichKeyDesc_method_up = "]] Move to previous method"
+:map [g <Action>(GotoNextError)
+:map ]g <Action>(GotoPreviousError)
+let g:WhichKeyDesc_goto_next_error = "g] Goto next error"
+let g:WhichKeyDesc_goto_previous_error = "g[ Goto previous error"
+:map <leader>k <Action>(JumpToLastChange)
+:map <leader>K <Action>(JumpToNextChange)
+let g:WhichKeyDesc_jump_to_last_change = "<leader>k Jump to last change"
+let g:WhichKeyDesc_jump_to_next_change = "<leader>K Jump to next change"
+:map gn <Action>(GotoNextElementUnderCaretUsage)
+:map gN <Action>(GotoPrevElementUnderCaretUsage)
+let g:WhichKeyDesc_goto_next_element_under_caret_usage = "gn Goto next element under caret usage"
+let g:WhichKeyDesc_goto_prev_element_under_caret_usage = "gN Goto previous element under caret usage"
+
+" git
+map <leader>ic <Action>(CheckinProject)
+map <leader>ii <Action>(ActivateVersionControlToolWindow)
+map <leader>ib <Action>(Git.Branches)
+nmap <leader>iz <Action>(Vcs.RollbackChangedLines)
+nmap <leader>ih <Action>(VcsShowCurrentChangeMarker)
+nmap <leader>id <Action>(VcsToolbarActions)
+nmap [h <Action>(VcsShowNextChangeMarker)
+nmap ]h <Action>(VcsShowPrevChangeMarker)
+let g:WhichKeyDesc_git = "<leader>i Git operations"
+let g:WhichKeyDesc_git_commit = "<leader>ic Open git commit dialog"
+let g:WhichKeyDesc_git_status = "<leader>ii Open git status dialog"
+let g:WhichKeyDesc_git_branches = "<leader>ib Open git branches list"
+let g:WhichKeyDesc_git_reset_hunk = "<leader>iz Reset hunk"
+let g:WhichKeyDesc_git_show_hunk = "<leader>ih Show hunk"
+let g:WhichKeyDesc_git_show_toolbar = "<leader>ih Show Git toolbar"
+let g:WhichKeyDesc_git_next_hunk = "[h Go to next hunk"
+let g:WhichKeyDesc_git_previous_hunk = "]h Go to previous hunk"
+
+" nerdtree
+nmap <leader>e :NERDTree<CR>
+let g:WhichKeyDesc_nerdtree = "<leader>e Open explorer"
+
+" folding
+map <leader>zc :action CollapseAllRegions<CR>
+map <leader>zo :action ExpandAllRegions<CR>
+let g:WhichKeyDesc_fold = "<leader>z Folding"
+let g:WhichKeyDesc_fold_all = "<leader>zc Fold all regions"
+let g:WhichKeyDesc_unfold_all = "<leader>zo Unfold all regions"
+
+" dial
+nmap <C-a> <Plug>(DialIncrement)
+nmap <C-x> <Plug>(DialDecrement)
+
+" remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+
+" scratch
+:map <leader>ns <Action>(NewScratchBuffer)
+:map <leader>nd <Action>(Scratch.ChangeLanguage)
+let g:WhichKeyDesc_scratch = "<leader>n Scratch"
+let g:WhichKeyDesc_scratch_new_buffer = "<leader>ns Scratch create new buffer"
+let g:WhichKeyDesc_scratch_change_language = "<leader>nd Scratch change language"
