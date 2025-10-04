@@ -103,7 +103,7 @@ inoremap jk <Esc>
 :map <leader>w <Action>(SaveDocument)
 let g:WhichKeyDesc_save_document = "<leader>w Save document"
 nnoremap <leader><cr> :nohlsearch<cr>
-let g:WhichKeyDesc_select_all = "<leader>aa Select the whole file"
+let g:WhichKeyDesc_no_highlight = "<leader><CR> Clear highlight"
 :nmap <c-o> <Action>(Back)
 :nmap <c-i> <Action>(Forward)
 
@@ -138,14 +138,21 @@ vnoremap <C-d> <C-d>zz
 :map <leader>aa ggVG
 :map <leader>ac <action>(ShowIntentionActions)
 :map <leader>as <action>(SearchEverywhere)
+:map <leader>af <action>(ReformatCode)
+:map <leader>ao <action>(OptimizeImports)
+:map <leader>ak <Action>(ShowHoverInfo)
 let g:WhichKeyDesc_misc = "<leader>a Misc"
 let g:WhichKeyDesc_select_all= "<leader>aa Select all file content"
-let g:WhichKeyDesc_code_action = "<leader>am Show code action"
-let g:WhichKeyDesc_search_everywhere = "<leader>am Search everywhere"
+let g:WhichKeyDesc_code_action = "<leader>ac Show code action"
+let g:WhichKeyDesc_search_everywhere = "<leader>as Search everywhere"
+let g:WhichKeyDesc_reformat_code = "<leader>af Reformat code"
+let g:WhichKeyDesc_optmize_imports = "<leader>ao Optimize Imports"
+let g:WhichKeyDesc_show_hover_info = "<leader>ak Show hover info"
+
 
 " window navigation
-:map <a-k> gT
-:map <a-j> gt
+:map <A-k> gT
+:map <A-j> gt
 :map <Tab> <Action>(NextTab)
 :map <S-Tab> <Action>(PreviousTab)
 
@@ -173,7 +180,7 @@ map <leader>sv <Action>(SplitVertically)
 map <leader>sh <Action>(SplitHorizontally)
 map <leader>su <Action>(Unsplit)
 map <leader>sm <Action>(MoveEditorToOppositeTabGroup)
-let g:WhichKeyDesc_split = "<leader>w Split windows"
+let g:WhichKeyDesc_split = "<leader>s Split windows"
 let g:WhichKeyDesc_split_vertically = "<leader>sv Split vertically"
 let g:WhichKeyDesc_split_horizontally = "<leader>sh Split horizontally"
 let g:WhichKeyDesc_unsplit = "<leader>su Unsplit"
@@ -229,10 +236,6 @@ let g:WhichKeyDesc_method_up = "]] Move to previous method"
 :map ]g <Action>(GotoPreviousError)
 let g:WhichKeyDesc_goto_next_error = "g] Goto next error"
 let g:WhichKeyDesc_goto_previous_error = "g[ Goto previous error"
-:map <leader>k <Action>(JumpToLastChange)
-:map <leader>K <Action>(JumpToNextChange)
-let g:WhichKeyDesc_jump_to_last_change = "<leader>k Jump to last change"
-let g:WhichKeyDesc_jump_to_next_change = "<leader>K Jump to next change"
 :map gn <Action>(GotoNextElementUnderCaretUsage)
 :map gN <Action>(GotoPrevElementUnderCaretUsage)
 let g:WhichKeyDesc_goto_next_element_under_caret_usage = "gn Goto next element under caret usage"
@@ -253,13 +256,17 @@ let g:WhichKeyDesc_git_status = "<leader>ii Open git status dialog"
 let g:WhichKeyDesc_git_branches = "<leader>ib Open git branches list"
 let g:WhichKeyDesc_git_reset_hunk = "<leader>iz Reset hunk"
 let g:WhichKeyDesc_git_show_hunk = "<leader>ih Show hunk"
-let g:WhichKeyDesc_git_show_toolbar = "<leader>ih Show Git toolbar"
+let g:WhichKeyDesc_git_show_toolbar = "<leader>id Show Git toolbar"
 let g:WhichKeyDesc_git_next_hunk = "[h Go to next hunk"
 let g:WhichKeyDesc_git_previous_hunk = "]h Go to previous hunk"
 
 " nerdtree
 nmap <leader>e :NERDTree<CR>
 let g:WhichKeyDesc_nerdtree = "<leader>e Open explorer"
+
+" terminal
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+let g:WhichKeyDesc_terminal = "<leader>t Open terminal"
 
 " folding
 map <leader>zc :action CollapseAllRegions<CR>
@@ -286,3 +293,45 @@ xmap <C-p> <Plug>RemoveOccurrence
 let g:WhichKeyDesc_scratch = "<leader>n Scratch"
 let g:WhichKeyDesc_scratch_new_buffer = "<leader>ns Scratch create new buffer"
 let g:WhichKeyDesc_scratch_change_language = "<leader>nd Scratch change language"
+
+" run and debug
+:map <leader>dq <Action>(Stop)
+:map <leader>dr <Action>(Run)
+:map <leader>dd <Action>(Debug)
+:map <leader>dc <Action>(ChooseRunConfiguration)
+:map <leader>di <Action>(ChooseDebugConfiguration)
+:map <leader>db <Action>(ToggleLineBreakpoint)
+:map <leader>dv <Action>(ViewBreakpoints)
+:map <leader>du <Action>(Debugger.RemoveAllBreakpoints)
+let g:WhichKeyDesc_run_debug = "<leader>d Run and Debug"
+let g:WhichKeyDesc_stop = "<leader>dq Stop"
+let g:WhichKeyDesc_run = "<leader>dr Run"
+let g:WhichKeyDesc_debug = "<leader>dd Debug"
+let g:WhichKeyDesc_choose_run_configuration = "<leader>dc Choose run configuration"
+let g:WhichKeyDesc_choose_debug_configuration = "<leader>df Choose debug configuration"
+let g:WhichKeyDesc_toggle_breakpoint = "<leader>db Toggle breakpoint"
+let g:WhichKeyDesc_view_breakpoints = "<leader>dv View breakpoints"
+let g:WhichKeyDesc_remove_all_breakpoints = "<leader>du Remove all breakpoints"
+
+" bookmarks
+nmap <leader>bs <Action>(ShowBookmarks)
+nmap <leader>bt <Action>(ActivateBookmarksToolWindow)
+nmap <leader>bb <Action>(ToggleBookmark)
+nmap <leader>be <Action>(EditBookmark)
+nmap <leader>bp <Action>(GotoPreviousBookmark)
+nmap <leader>bn <Action>(GotoNextBookmark)
+let g:WhichKeyDesc_bookmarks = "<leader>b Bookmarks"
+let g:WhichKeyDesc_bookmarks_menu = "<leader>bm Bookmark Menu"
+let g:WhichKeyDesc_bookmarks_show = "<leader>bs Show Bookmarks"
+let g:WhichKeyDesc_bookmarks_tool = "<leader>bt Bookmark Tool"
+let g:WhichKeyDesc_bookmarks_toggle_bookmark = "<leader>bb Toggle Bookmark"
+let g:WhichKeyDesc_bookmarks_edit = "<leader>be Edit Bookmark"
+let g:WhichKeyDesc_bookmarks_prev = "<leader>bp Previous Bookmark"
+let g:WhichKeyDesc_bookmarks_next = "<leader>bn Next Bookmark"
+
+" popup navigation
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+
+" easymotion
+let g:WhichKeyDesc_easymotion = "<leader><leader> Activate easy-motion"
