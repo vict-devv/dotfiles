@@ -151,8 +151,8 @@ let g:WhichKeyDesc_show_hover_info = "<leader>ak Show hover info"
 
 
 " window navigation
-:map <A-k> gT
-:map <A-j> gt
+:map <A-k> gt
+:map <A-j> gT
 :map <Tab> <Action>(NextTab)
 :map <S-Tab> <Action>(PreviousTab)
 
