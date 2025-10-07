@@ -149,7 +149,6 @@ let g:WhichKeyDesc_reformat_code = "<leader>af Reformat code"
 let g:WhichKeyDesc_optmize_imports = "<leader>ao Optimize Imports"
 let g:WhichKeyDesc_show_hover_info = "<leader>ak Show hover info"
 
-
 " window navigation
 :map <A-k> gt
 :map <A-j> gT
@@ -203,6 +202,7 @@ map <leader>rm <Action>(ExtractMethod)
 map <leader>rv <Action>(IntroduceVariable)
 map <leader>rf <Action>(IntroduceField)
 map <leader>rs <Action>(ChangeSignature)
+map <leader>ro <Action>(SurroundWith)
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
 let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
@@ -210,6 +210,7 @@ let g:WhichKeyDesc_refactoring_method = "<leader>rm Extract method"
 let g:WhichKeyDesc_refactoring_variable = "<leader>rv Introduce variable"
 let g:WhichKeyDesc_refactoring_field = "<leader>rf Introduce field"
 let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
+let g:WhichKeyDesc_refactoring_surround = "<leader>ro Surround with..."
 let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
 
 " Go to code
