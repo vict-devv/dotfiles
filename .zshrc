@@ -1,7 +1,7 @@
 # Exports
 export EDITOR=vim
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:~/.cargo/bin/:~/.local/bin
+export PATH=$PATH:$HOME/.asdf/shims:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/go/bin
 
 # Plugins
 plugins=(
@@ -45,6 +45,6 @@ autoload -Uz compinit && compinit
 
 # Autostart
 ## fastfetch
-iif [[ $(tty) == *"pts"* ]]; then
+if [[ $(tty) == *"pts"* ]]; then
     fastfetch
 fi
