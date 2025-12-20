@@ -1,0 +1,26 @@
+[user]
+	name = Victor
+	email = [email]
+	signingkey = [ssh key] # ssh-ed25519 ...
+[core]
+	editor = vim
+	# sshCommand = ssh.exe [WSL only]
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[alias]
+	lg = log --graph --pretty=format:'%C(auto)%h-%C(auto)%d %s %C(cyan)%an %C(green)%cr' --abbrev-commit --date=relative
+	co = checkout
+	cm = commit
+	br = branch
+	pl = pull
+	pu = push
+	rb = rebase
+	mg = merge
+	df = diff
+	st = status
+	sh = stash
+[gpg]
+	format = ssh
+	# program = C:/Users/victo/AppData/Local/Microsoft/WindowsApps/op-ssh-sign.exe [WSL only]
