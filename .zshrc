@@ -27,7 +27,7 @@ SAVEHIST=1000
 setopt appendhistory
 
 # Prompt
-eval "$(oh-my-posh init zsh --config $HOME/.config/dotfiles/oh-my-posh/custom.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.json)"
 
 # Aliases
 alias ff='fastfetch'
