@@ -4,6 +4,7 @@ general=(
     "wget"
     "curl"
     "git"
+    "zip"
     "unzip"
     "tar"
     "jq"
