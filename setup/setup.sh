@@ -30,6 +30,8 @@ apps=(
     "blueman"
     "qt6ct"
     "nautilus"
+    "firefox"
+    "google-chrome"
 )
 
 tools=(
