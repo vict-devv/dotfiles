@@ -97,6 +97,8 @@ _installYay() {
     echo ":: yay has been installed successfully."
 }
 
+_installYay
+
 _isInstalled() {
     package="$1"
     check="$(sudo pacman -Qs --color always "${package}" | grep "local" | grep "${package} ")"
@@ -145,7 +147,7 @@ _installPackages "${packages[@]}"
 
 # install oh-my-zsh
 if [ ! -d $HOME/.oh-my-zsh ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 fi
 
 # install oh-my-posh
