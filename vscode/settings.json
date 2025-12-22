@@ -1,0 +1,236 @@
+{
+  // editor
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 4,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": false,
+  // terminal
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  // explorer
+  "explorer.confirmDelete": false,
+  // workbench
+  "workbench.colorTheme": "Better Solarized Light",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "github.copilot.enable": {
+    "*": true
+  },
+  // git
+  "git.confirmSync": false,
+  "git.allowForcePush": true,
+  // vim
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "vim.easymotion": true,
+  "vim.autoindent": true,
+  "vim.ignorecase": true,
+  "vim.hlsearch": true,
+  "vim.smartcase": true,
+  "vim.surround": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  // vim keybindings insert mode
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // vim keybindings visual mode
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["g", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["g", "b", "c"],
+      "commands": ["editor.action.blockComment"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  // vim keybindings normal mode
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "P"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["leader", "n"],
+      "commands": [":set rnu!"]
+    },
+    {
+      "before": ["<leader>", "<CR>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "commands": [":e!"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.dirtydiff.next"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.goToDefinition"]
+    },
+    {
+      "before": ["g", "T"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["g", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["<leader>", "s", "m"],
+      "commands": ["workbench.action.toggleMaximizeEditorGroup"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-q>"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<S-x>"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "d", "r"],
+      "commands": ["workbench.action.debug.run"]
+    },
+    {
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "d", "c"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "d", "i"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "before": ["<leader>", "d", "o"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["bookmarks.clear"]
+    },
+    {
+      "before": ["<leader>", "C"],
+      "commands": ["bookmarks.clearFromAllFiles"]
+    }
+  ],
+  // extra
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
