@@ -34,8 +34,8 @@ alias ff='fastfetch'
 alias shutdown='systemctl poweroff'
 alias vi='$EDITOR'
 ## scripts
-alias cleanup='~/.config/dotfiles/scripts/cleanup.sh'
-alias autoremove='~/.config/dotfiles/scripts/autoremove.sh'
+alias cleanup='~/.config/scripts/cleanup.sh'
+alias autoremove='~/.config/scripts/autoremove.sh'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # Completions
