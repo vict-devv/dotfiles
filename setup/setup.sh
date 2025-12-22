@@ -78,6 +78,7 @@ packages=(
     "otf-font-awesome"
     "ttf-fira-sans"
     "ttf-jetbrains-mono-nerd"
+    "ttf-cascadia-code-nerd"
     "tty-clock"
     "qt5-graphicaleffects"
     "qt5-qtquickcontrols2"
