@@ -18,6 +18,8 @@ hyprland=(
     "hypridle"
     "hyprpicker"
     "xdg-desktop-portal-hyprland"
+    "uwsm"
+    "libnewt"
 )
 
 apps=(
@@ -75,8 +77,21 @@ packages=(
     "swaync"
     "otf-font-awesome"
     "ttf-fira-sans"
+    "ttf-jetbrains-mono-nerd"
     "tty-clock"
+    "qt5-graphicaleffects"
+    "qt5-qtquickcontrols2"
+    "qt5-qtsvg"
 )
+
+_installBibataCursor() {
+    if [[ -d $HOME/.local/share/icons ]]
+        mkdir -p $HOME/.local/share/icons
+    fi
+        bibata="https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Ice.tar.xz"
+        wget -P $HOME/Downloads $bibata 
+        tar -xf $HOME/Downloads/Bibata-Modern-Ice.tar.xz -C $HOME/.local/share/icons
+}
 
 _installYay() {
     if [[ ! $(_isInstalled "base-devel") == 0 ]]; then

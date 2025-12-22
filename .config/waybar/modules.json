@@ -60,10 +60,10 @@
     "interval": 1800,
     "signal": 1,
     "hide-empty-text": true,
-    "on-click": "~/.config/scripts/installupdates.sh"
+    "on-click": "kitty --class dotfiles-floaintg -e ~/.config/scripts/installupdates.sh"
   },
   "custom/exit": {
-    "format": "",
+    "format": " ",
     "on-click": "~/.config/scripts/wlogout.sh",
     "on-click-right": "hyprlock",
     "tooltip-format": "Left: Power menu\nRight: Lock screen"
@@ -72,14 +72,8 @@
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
     "format": "{icon}",
     "format-icons": {
-      "notification": "notifications_active",
-      "none": "notifications",
-      "dnd-notification": "notifications_active",
-      "dnd-none": "notifications_paused",
-      "inhibited-notification": "notification_important",
-      "inhibited-none": "notification_important",
-      "dnd-inhibited-notification": "notification_off",
-      "dnd-inhibited-none": "notifications_off"
+      "notification": " ",
+      "none": " "
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -111,10 +105,20 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%H:%M %a}",
-    "on-click": "flatpak run com.ml4w.calendar",
-    "timezone": "",
-    "tooltip": false
+    "format": "{:%I:%M%p %a}",
+    "timezone": "America/Toronto",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "month": "<span color='#7c580d'><b>{}</b></span>,",
+        "days": "<span color='#6e5c40'><b>{}</b></span>,",
+        "weekdays": "<span color='#6e5c40'><b>{}</b></span>,",
+        "today": "<span color='#f0bf6d'><b><u>{}</u></b></span>,"
+      }
+    }
   },
   "group/tools": {
     "orientation": "inherit",

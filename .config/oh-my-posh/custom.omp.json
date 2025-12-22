@@ -88,10 +88,10 @@
           "template": "\uE235 {{ .Full }}"
         },
         {
-          "type": "julia",
+          "type": "rust",
           "style": "plain",
           "foreground": "p:terminal-magenta",
-          "template": "\uE624 {{ .Full }}"
+          "template": "\uF980 {{ .Full }}"
         },
         {
           "type": "ruby",
@@ -128,7 +128,7 @@
     "template": "\u279c "
   },
   "transient_prompt": {
-    "background": "p:t-background",
+    "background": "transparent",
     "foreground": "p:terminal-blue",
     "template": "\u279c "
   },
