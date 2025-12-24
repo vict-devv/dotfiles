@@ -7,7 +7,7 @@ This repo contains my personal dotfiles for configuring Arch + Hyprland system.
 To set up the dotfiles on a new system, run the setup script:
 
 ```bash
-bash setup/setup.sh
+sh setup/setup.sh
 ```
 
 ## Configuration
@@ -28,6 +28,9 @@ Some tools such as `Yay` will be setup in the following directory: `~/Tools/`.
 ```bash
 cp -r path/to/dotfiles/.config/* ~/.config/
 ```
+
+## Themes
+- Icons: [Goldy-Dark-Icon](https://www.gnome-look.org/p/2037378)
 
 ## Tools
 
