@@ -2,7 +2,10 @@
 figlet -f smslant "AutoRemove"
 echo
 
-if [[ $(yay -Qqdt) ==  0 ]]; then
+yay -Qqdt
+status=$?
+
+if [[ $($status ==  1 ]]; then
     echo "Nothing to be removed."
 else
     yay -Rsu $(yay -Qqdt)
