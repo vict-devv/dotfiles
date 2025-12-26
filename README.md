@@ -2,7 +2,7 @@
 
 This repo contains my personal dotfiles for configuring Arch + Hyprland system.
 
-## Installating Packages
+## Installing Packages
 
 To set up the dotfiles on a new system, run the setup script:
 
