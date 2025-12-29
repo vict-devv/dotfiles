@@ -35,6 +35,7 @@ apps=(
     "nautilus"
     "firefox"
     "google-chrome"
+    "gnome-calculator"
 )
 
 tools=(
