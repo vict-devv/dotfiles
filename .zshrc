@@ -1,7 +1,7 @@
 # Exports
 export EDITOR=vim
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:$HOME/.asdf/shims:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/go/bin
+export PATH=$HOME/.asdf/shims:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/go/bin:$PATH
 
 # Plugins
 plugins=(
@@ -23,6 +23,8 @@ source <(fzf --zsh)
 # ZSH history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
+HISTTIMEFORMAT="%Y-%m-%d %T "
+HISTCONTROL=ignoreboth
 SAVEHIST=1000
 setopt appendhistory
 
