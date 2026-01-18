@@ -13,6 +13,8 @@ packages=(
     "vim"
     "zsh"
     "htop"
+    "docker"
+    "docker-compose"
     "xclip"
     "figlet"
     "fastfetch"
