@@ -1,52 +1,43 @@
 # Dotfiles
 
-This repo contains my personal dotfiles for configuring Arch + Hyprland system.
+This repo contains my personal configuration for Arch Linux distro with Cosmic DE.
 
-## Installing Packages
+## Installing Packages and Tools
 
 To set up the dotfiles on a new system, run the setup script:
 
 ```bash
-sh setup/setup.sh
+cd .config/scripts/
+chmod u+x setup.sh
+./setup.sh
 ```
+
+Some tools such as `Yay` and `ASDF` will be installed in t: `~/Tools/`.
 
 ## Configuration
 
-You can either copy the configuration files manually or use symbolic links to point to the dotfiles in this repository.
+Copy (or create symbolic links) the files in `.config` to your `$HOME/.config` directory (save a backup from the previous configuration is highly recommended).
 
-Everything is located in the `~/.config/` directory.
-
-To work with wallpaper and the lock screen the following files need to exists:
-
-- `~/Pictures/Wallpaper/wallpaper.png`
-- `~/Pictures/profile.png`
-
-The setup only works with PNG files for now.
-
-Some tools such as `Yay` will be setup in the following directory: `~/Tools/`.
+Once you are inside the project root directory, run:
 
 ```bash
-cp -r path/to/dotfiles/.config/* ~/.config/
+cp -r .config/* $HOME/.config/
 ```
 
-## Themes
-- Icons: [Goldy-Dark-Icon](https://www.gnome-look.org/p/2037378)
+A nit pick that I like to do is change the Terminal launch shortcut from the Cosmic default `Win+T` to `Win+Enter`.
 
-## Tools
+## Theme & Appearance
+- Color Scheme: [Tokyo Night Storm](https://github.com/tokyo-night/tokyo-night-vscode-theme)
+- Cosmic Settings:
+    - Accent color: `#7DCFFF`
+    - Window background: `#24283B`
+- Wallpapers: they are located in the `wallpapers` directory.
 
-- Kitty
-- Hyperland
-- Vim
-- Fastfetch
-- Matugen
-- Rofi
-- Swaync
-- Waybar
-- Oh My Posh
-
-## Credits
-
-I've used the ML4W's dotfiles setup as a reference for creating my own dotfiles.
-Removing and adapt things to fit my preferences and workflow.
-
-You can find their repository [here](https://github.com/ML4W/dotfiles).
+## Apps & Tools
+- Cosmic | Desktop Environment
+- Firefox | Browser
+- Thunderbird | Mail Client
+- ZSH + Oh-My-ZSH | Shell
+- Vim | Text Editor
+- Oh-My-Posh | Prompt
+- ASDF | Tool version manager

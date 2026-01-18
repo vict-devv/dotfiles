@@ -8,7 +8,7 @@
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   // terminal
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font Mono",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.fontSize": 12,

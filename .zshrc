@@ -17,9 +17,6 @@ plugins=(
 # Set-up oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# Set-up FZF key bindings (CTRL-R for Fuzzy History Finder)
-source <(fzf --zsh)
-
 # ZSH history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -38,7 +35,6 @@ alias vi='$EDITOR'
 ## scripts
 alias cleanup='~/.config/scripts/cleanup.sh'
 alias autoremove='~/.config/scripts/autoremove.sh'
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # Completions
 ## asdf
