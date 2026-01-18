@@ -29,6 +29,7 @@ setopt appendhistory
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.json)"
 
 # Aliases
+alias lsa='ll -A'
 alias ff='fastfetch'
 alias shutdown='systemctl poweroff'
 alias vi='$EDITOR'
