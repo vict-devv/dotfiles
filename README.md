@@ -1,6 +1,7 @@
 # Dotfiles
 
-This repo contains my personal configuration for Arch Linux distro with Cosmic DE.
+This repo contains my personal configuration for Linux with Cosmic.
+
 
 ## Installing Packages and Tools
 
@@ -12,7 +13,7 @@ chmod u+x setup.sh
 ./setup.sh
 ```
 
-Some tools such as `Yay` and `ASDF` will be installed in t: `~/Tools/`.
+Some tools such as `ASDF` will be installed in: `~/Tools/`.
 
 ## Configuration
 
@@ -34,10 +35,10 @@ A nit pick that I like to do is change the Terminal launch shortcut from the Cos
 - Wallpapers: they are located in the `wallpapers` directory.
 
 ## Apps & Tools
-- Cosmic | Desktop Environment
-- Firefox | Browser
-- Thunderbird | Mail Client
+- Cosmic          | Desktop Environment
+- Firefox         | Browser
+- Thunderbird     | Mail Client
 - ZSH + Oh-My-ZSH | Shell
-- Vim | Text Editor
-- Oh-My-Posh | Prompt
-- ASDF | Tool version manager
+- Vim             | Text Editor
+- Oh-My-Posh      | Prompt
+- ASDF            | Tool version manager
