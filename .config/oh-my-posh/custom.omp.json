@@ -84,19 +84,19 @@
           "type": "python",
           "style": "plain",
           "foreground": "p:terminal-yellow",
-          "template": "Python {{ .Full }}"
+          "template": "🐍 {{ .Full }}"
         },
         {
           "type": "go",
           "style": "plain",
           "foreground": "p:light-sky-blue",
-          "template": "Go {{ .Full}}"
+          "template": "🐹 {{ .Full}}"
         },
         {
           "type": "rust",
           "style": "plain",
           "foreground": "p:terminal-red",
-          "template": "Rust {{ .Full}}"
+          "template": "🦀 {{ .Full}}"
         }
       ],
       "type": "prompt"

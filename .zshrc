@@ -5,17 +5,21 @@ export PATH=$HOME/.asdf/shims:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/go/bin:$P
 
 # Plugins
 plugins=(
+    asdf
     git
-    sudo
-    archlinux
+    sudo # prefix the current command with "sudo" by pressing Esc twice
     zsh-autosuggestions
     zsh-syntax-highlighting
-    copyfile
-    copybuffer
+    copyfile # copies the contents of a file to the clipboard... "copyfile <filename>"
+    copybuffer # copies the current text in the cmd line to the clipboard... "ctr+o"
+    copypath # copies the absolute path of a given file/dir to the clipboard... "copypath <file/dir>"
 )
 
 # Set-up oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# Set-up FZF
+# source <(fzf --zsh) for now FZF version on ubuntu does not support --zsh flag
 
 # ZSH history
 HISTFILE=~/.zsh_history
@@ -29,21 +33,17 @@ setopt appendhistory
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.json)"
 
 # Aliases
-alias lsa='ll -A'
+alias c='clear'
 alias ff='fastfetch'
-alias shutdown='systemctl poweroff'
 alias vi='$EDITOR'
-## scripts
-alias cleanup='~/.config/scripts/cleanup.sh'
-alias autoremove='~/.config/scripts/autoremove.sh'
-
-# Completions
-## asdf
-fpath=(${ASDF_DATA_DIRa:-$home/.asdf}/completions $fpath)
-autoload -Uz compinit && compinit
+alias ls='eza --icons=always'
+alias lsa='eza -A --icons=always'
+alias ll='eza -l --icons=always'
+alias lla='eza -lA --icons=always'
+alias bat='batcat --theme=ansi'
+alias batc='batcat --theme=ansi --paging=never'
 
 # Autostart
-## fastfetch
 if [[ $(tty) == *"pts"* ]]; then
     fastfetch
 fi
