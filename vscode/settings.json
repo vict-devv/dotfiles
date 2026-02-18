@@ -8,7 +8,7 @@
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   // terminal
-  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font Mono",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.fontSize": 12,
@@ -17,11 +17,14 @@
   // explorer
   "explorer.confirmDelete": false,
   // workbench
-  "workbench.colorTheme": "Better Solarized Light",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
   },
   // git
   "git.confirmSync": false,
@@ -74,6 +77,10 @@
     {
       "before": ["K"],
       "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["leader", "r", "f"],
+      "commands": ["editor.action.refactor"]
     }
   ],
   // vim keybindings normal mode
@@ -155,8 +162,12 @@
       "commands": ["editor.action.showDefinitionPreviewHover"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["leader", "r", "f"],
+      "commands": ["editor.action.refactor"]
     },
     {
       "before": ["<leader>", "o"],
@@ -232,5 +243,12 @@
     }
   ],
   // extra
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "explorer.confirmDragAndDrop": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "aws.cloudformation.telemetry.enabled": false,
+  "aws.telemetry": false
 }
