@@ -17,7 +17,7 @@
   // explorer
   "explorer.confirmDelete": false,
   // workbench
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "github.copilot.enable": {
