@@ -1,0 +1,32 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml",
+]
+
+[window]
+padding = { x = 8, y = 8 }
+decorations = "None"
+opacity = 0.85
+
+[font]
+normal = { family = "Caskaydia Cove NF", style = "SemiBold" }
+bold = { family = "Caskaydia Cove NF", style = "Bold" }
+italic = { family = "Caskaydia Cove NF", style = "Italic" }
+bold_italic = { family = "Caskaydia Cove NF", style = "Bold Italic" }
+size = 11
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking =  "Never" }
+
+[terminal]
+shell = "zsh"
+
+[env]
+XDG_CURRENT_DESKTOP="GNOME"
+QT_QPA_PLATFORMTHEME="gtk3"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
