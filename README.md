@@ -13,7 +13,7 @@ Personal dotfiles for my Arch Linux setup.
 | Terminal         | Alacritty                           |
 | Shell            | Zsh + Oh My Zsh + Starship          |
 | Multiplexer      | tmux                                |
-| Editor           | Vim                                 |
+| Editor           | Vim, VS Code                        |
 | Browser          | Firefox                             |
 | File Manager     | Nautilus                            |
 | Color Theme      | Everforest (Dark)                   |
@@ -30,6 +30,8 @@ Personal dotfiles for my Arch Linux setup.
   alacritty/
     alacritty.toml                  # Terminal config (font, opacity, theme import)
     themes/noctalia.toml            # Noctalia-generated Alacritty colorscheme
+  claude/
+    everforest-dark.json            # Everforest Dark color theme for Claude Code CLI
   fastfetch/config.jsonc            # Fetch display with custom card layout
   niri/
     config.kdl                      # Compositor config (keybinds, outputs, rules)
@@ -45,6 +47,10 @@ Personal dotfiles for my Arch Linux setup.
     asdf_install_latest_versions.sh # Install latest asdf-managed tool versions
     asdf_uninstall_old_versions.sh  # Clean up old asdf tool versions
   starship.toml                     # Starship prompt config with Noctalia palette
+  vscode/
+    settings.json                   # VS Code settings (Vim keybindings, Everforest theme, formatting)
+    keybindings.json                # Custom keybindings
+    extensions.txt                  # Installed extensions list
 wallpapers/                         # Everforest wallpaper + lockscreen
 ```
 
