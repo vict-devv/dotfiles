@@ -1,0 +1,10 @@
+alefragnani.bookmarks
+andreilucaci.everforest-pro
+anthropic.claude-code
+beardedbear.beardedicons
+daltonmenezes.aura-theme
+esbenp.prettier-vscode
+ms-kubernetes-tools.vscode-kubernetes-tools
+redhat.vscode-yaml
+subframe7536.custom-ui-style
+vscodevim.vim
