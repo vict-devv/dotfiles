@@ -24,6 +24,7 @@ Personal dotfiles for my Arch Linux setup.
 
 ```
 .gitconfig                          # Git config (aliases, SSH signing via 1Password)
+.vimrc                              # Vim config (keymaps, plugins, Everforest theme)
 .zshrc                              # Zsh config (Oh My Zsh, Starship, aliases)
 .tmux.conf                          # tmux config with Everforest theme
 .config/
@@ -97,6 +98,44 @@ wallpapers/                         # Everforest wallpaper + lockscreen
 | `ff`   | `fastfetch`                       |
 | `vi`   | `$EDITOR` (vim)                   |
 | `c`    | `clear`                           |
+
+## Vim Keymaps
+
+`<leader>` = Space.
+
+| Keymap            | Mode   | Action                          |
+|-------------------|--------|---------------------------------|
+| `jk`              | Insert | Escape to normal mode           |
+| `<Esc>`           | Normal | Clear search highlights         |
+| `n` / `N`         | Normal | Next/prev match (centered)      |
+| `<leader>w`       | Normal | Save file                       |
+| `<leader>q`       | Normal | Quit                            |
+| `<leader>rn`      | Normal | Toggle relative line numbers    |
+| `<leader>h/j/k/l` | Normal | Focus split left/down/up/right  |
+| `<leader>sv`      | Normal | Vertical split                  |
+| `<leader>sh`      | Normal | Horizontal split                |
+| `<leader>e`       | Normal | Open Netrw explorer             |
+| `<leader>ff`      | Normal | FZF: find files                 |
+| `<leader>fg`      | Normal | FZF: live grep (ripgrep)        |
+| `<leader>fb`      | Normal | FZF: list buffers               |
+| `]d` / `[d`       | Normal | Next/prev ALE diagnostic        |
+| `<leader>a`       | Normal | ALE: show diagnostic detail     |
+| `<leader>gs`      | Normal | LazyGit                         |
+| `<leader>gb`      | Normal | Git blame                       |
+
+## Vim Plugins
+
+- `sainnhe/everforest` — Everforest color theme
+- `tpope/vim-fugitive` — Git integration
+- `airblade/vim-gitgutter` — Git diff signs in the gutter
+- `kdheepak/lazygit.nvim` — LazyGit TUI
+- `junegunn/fzf` + `fzf.vim` — Fuzzy finder (files, grep, buffers)
+- `tpope/vim-surround` — Surround text objects
+- `sheerun/vim-polyglot` — Language pack
+- `dense-analysis/ale` — Async linting + fixing (shellcheck, hadolint, tflint, ansible-lint)
+- `hashivim/vim-terraform` — Terraform filetype support
+- `pearofducks/ansible-vim` — Ansible filetype support
+- `machakann/vim-highlightedyank` — Briefly highlight yanked text
 
 ## Oh My Zsh Plugins
 
