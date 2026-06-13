@@ -1,5 +1,6 @@
 {
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
+  "workbench.activityBar.compact": true,
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "bearded-icons",
   "workbench.tree.enableStickyScroll": false,
@@ -21,7 +22,7 @@
   "editor.scrollbar.horizontal": "hidden",
   "editor.lightbulb.enabled": "off",
   "editor.hover.enabled": "off",
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.showFoldingControls": "never",
   "editor.lineNumbers": "relative",
@@ -31,9 +32,6 @@
   "editor.occurrencesHighlight": "off",
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.quickSuggestions": {
-    "other": "off",
-  },
   "editor.suggestOnTriggerCharacters": false,
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
@@ -53,23 +51,8 @@
   "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "never",
-  // Custom UI
-  "custom-ui-style.electron": {
-    "titleBarStyle": "hiddenInset",
-  },
-  //"custom-ui-style.font.sansSerif": "Ubuntu Nerd Font",
-  "custom-ui-style.stylesheet": {
-    ".notification-toast": "box-shadow: none !important",
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-    ".quick-input-widget": "top: 25vh !important",
-    ".quick-input-list .scrollbar": "display: none",
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".sidebar": "border none !important",
-    ".monaco-list-row": "background-color: transparent !important; outline: none !important",
-    ".title-actions": "display: none !important",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-  },
+  // Terminal
+  "terminal.integrated.enablePersistentSessions": false,
   // Vim
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
@@ -120,6 +103,7 @@
       "before": ["]", "c"],
       "commands": ["workbench.action.editor.nextChange"],
     },
+    // Terminal
     // Misc <leader> key bindings
     {
       "before": ["<leader>", "w"],
@@ -347,4 +331,24 @@
   "vscode-kubernetes.kubectl-path-linux": "/home/victor/.asdf/shims/kubectl",
   "vscode-kubernetes.helm-path-linux": "/home/victor/.asdf/shims/helm",
   "workbench.colorTheme": "Everforest Pro Dark",
+  "claudeCode.preferredLocation": "sidebar",
+  // Prettier doesn't work well with Helm
+  "[helm]": {
+    "editor.formatOnSave": false,
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+  },
+  // Go extension
+  "go.goroot": "/home/victor/.asdf/installs/golang/1.26.4/go",
+  "go.gopath": "/home/victor/.asdf/installs/golang/1.26.4/packages",
+  // Terraform extension
+  "terraform.languageServer.terraform.path": "/home/victor/.asdf/shims/terraform",
 }
+

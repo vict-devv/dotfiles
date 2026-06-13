@@ -5,11 +5,13 @@ export PATH=$HOME/.asdf/shims:$HOME/.local/bin:$PATH
 
 plugins=(
     asdf
+    aws
     copybuffer # copies the current text in the terminal to clipboard `Ctrl+O`
     copyfile # copies the contents of a file to clipboard `copyfile <filename>`
     copypath # copies the absolute path of a file/dir to clipboard `copypath <file/dir>`
     fzf
     git
+    helm
     sudo # prefix the command with "sudo" by pressing Esc twice
     kubectl
     zsh-autosuggestions

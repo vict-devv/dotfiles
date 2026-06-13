@@ -17,10 +17,12 @@
 	pl = pull
 	pu = push
 	rb = rebase
+	rs = reset
 	mg = merge
 	df = diff
 	st = status
 	sh = stash
+	sw = switch
 [gpg]
 	format = ssh
 	# program = C:/Users/victo/AppData/Local/Microsoft/WindowsApps/op-ssh-sign.exe [WSL only]

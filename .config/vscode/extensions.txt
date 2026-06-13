@@ -2,9 +2,15 @@ alefragnani.bookmarks
 andreilucaci.everforest-pro
 anthropic.claude-code
 beardedbear.beardedicons
-daltonmenezes.aura-theme
 esbenp.prettier-vscode
+golang.go
+hashicorp.terraform
+ms-azuretools.vscode-containers
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-vscode-remote.remote-containers
 redhat.vscode-yaml
-subframe7536.custom-ui-style
 vscodevim.vim

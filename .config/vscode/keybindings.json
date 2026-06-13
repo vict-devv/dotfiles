@@ -18,15 +18,7 @@
   },
   // Buffers
   {
-    "key": "shift+h",
-    "command": "workbench.action.previousEditor",
-  },
-  {
-    "key": "shift+l",
-    "command": "workbench.action.nextEditor",
-  },
-  {
-    "key": "shift+x",
+    "key": "ctrl+x",
     "command": "workbench.action.closeOtherEditors",
   },
   // Terminal

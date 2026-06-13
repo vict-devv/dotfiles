@@ -29,7 +29,6 @@ nmap <silent> ]d <Plug>(ale_next_wrap)
 nmap <silent> [d <Plug>(ale_previous_wrap)
 nnoremap <leader>a :ALEDetail<CR>
 " Git
-nnoremap <silent> <leader>gs :LazyGit<CR>
 nnoremap <leader>gb :Git blame<CR>
 
 " Netrw ===========================================================================================
@@ -77,7 +76,6 @@ Plug 'sainnhe/everforest'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'kdheepak/lazygit.nvim'
 
 " Navigation & Search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

@@ -120,7 +120,6 @@ wallpapers/                         # Everforest wallpaper + lockscreen
 | `<leader>fb`      | Normal | FZF: list buffers               |
 | `]d` / `[d`       | Normal | Next/prev ALE diagnostic        |
 | `<leader>a`       | Normal | ALE: show diagnostic detail     |
-| `<leader>gs`      | Normal | LazyGit                         |
 | `<leader>gb`      | Normal | Git blame                       |
 
 ## Vim Plugins
@@ -128,7 +127,6 @@ wallpapers/                         # Everforest wallpaper + lockscreen
 - `sainnhe/everforest` — Everforest color theme
 - `tpope/vim-fugitive` — Git integration
 - `airblade/vim-gitgutter` — Git diff signs in the gutter
-- `kdheepak/lazygit.nvim` — LazyGit TUI
 - `junegunn/fzf` + `fzf.vim` — Fuzzy finder (files, grep, buffers)
 - `tpope/vim-surround` — Surround text objects
 - `sheerun/vim-polyglot` — Language pack
