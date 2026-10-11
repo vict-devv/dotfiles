@@ -1,0 +1,59 @@
+# ── Cloud CLIs ───────────────────────────────────────────────
+# Google Cloud: OAuth tokens, credential DBs, application default credentials
+**/.config/gcloud/
+
+# Azure CLI (lives in ~/.azure): MSAL token cache, profiles, service principals
+**/.azure/
+
+# AWS CLI: access keys in credentials, SSO token cache, account IDs in config
+**/.aws/
+
+# ── GitHub ───────────────────────────────────────────────────
+# gh CLI: OAuth token (config.yml has no secrets and can be versioned)
+**/.config/gh/hosts.yml
+# Copilot (Neovim/terminal): auth tokens
+**/.config/github-copilot/
+# Git credential store
+**/.git-credentials
+**/.config/git/credentials
+
+# ── Kubernetes & containers ─────────────────────────────────
+**/.kube/
+**/*kubeconfig*
+**/.config/k9s/clusters/
+**/.config/helm/repositories.yaml
+**/.config/helm/registry/
+**/.config/argocd/
+**/.docker/config.json
+**/.config/containers/auth.json
+
+# ── Terraform ────────────────────────────────────────────────
+# Terraform Cloud / HCP API tokens
+**/.terraform.d/credentials.tfrc.json
+**/.terraformrc
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+
+# ── Keys, certificates & env files ───────────────────────────
+**/.ssh/
+**/.gnupg/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.env
+.env.*
+!.env.example
+
+# ── Other tools that store secrets ───────────────────────────
+**/.config/rclone/
+**/.netrc
+**/.npmrc
+**/.pypirc
+
+# ── OS & editor noise ────────────────────────────────────────
+.DS_Store
+*.swp
+*.bak
